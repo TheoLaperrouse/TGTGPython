@@ -1,0 +1,12 @@
+{
+    "email": "",
+    "password": "",
+    "access_token": "",
+    "refresh_token": "",
+    "user_id": "",
+    "mail": {
+        "gmail_user": "",
+        "gmail_password": "",
+        "mailReceiver": ""
+    }
+}

@@ -1,0 +1,470 @@
+{
+    "items": [
+        {
+            "item": {
+                "item_id": "34911i2616529",
+                "price": {
+                    "code": "EUR",
+                    "minor_units": 700,
+                    "decimals": 2
+                },
+                "value": {
+                    "code": "EUR",
+                    "minor_units": 0,
+                    "decimals": 2
+                },
+                "cover_picture": {
+                    "picture_id": "5900",
+                    "current_url": "https://s3-eu-west-1.amazonaws.com/tgtg1uploads/store/1548931416_uaR5cgBeVfW0hHXNeebdqjJYVmvGXkL4.jpg"
+                },
+                "logo_picture": {
+                    "picture_id": "61271",
+                    "current_url": "https://s3-eu-west-1.amazonaws.com/tgtg1uploads/store/1548931413_uSIb4C0uBSDHhisDcdP81UdCj7NU2DK7.jpg"
+                },
+                "name": "Soir",
+                "description": "\ud83c\udf55 ... D\u00e9couvre ce qui t'attend dans ton panier surprise et r\u00e9gale-toi !\n\n \ud83c\udf0d Evitons les sacs plastiques : ram\u00e8ne ton propre sac et sauve la plan\u00e8te !\n\n\ud83d\udc49 Psst, le volume d'invendus varie selon les jours. Quelque chose que tu ne manges pas ? Partage-le ! \n\n\ud83d\udca1 Plus de 41 tonnes de nourriture sont jet\u00e9es dans le monde chaque seconde.",
+                "food_handling_instructions": "Il est pr\u00e9f\u00e9rable de consommer les produits imm\u00e9diatement apr\u00e8s la r\u00e9cup\u00e9ration. En effet tous les produits sont frais.",
+                "can_user_supply_packaging": false,
+                "packaging_option": "MUST_BRING_BAG",
+                "favorite_count": 3295,
+                "diet_categories": [],
+                "item_category": "MEAL",
+                "badges": [
+                    {
+                        "badge_type": "OVERALL_RATING_TRUST_SCORE",
+                        "rating_group": "LIKED",
+                        "percentage": 90,
+                        "user_count": 176,
+                        "month_count": 6
+                    },
+                    {
+                        "badge_type": "SERVICE_RATING_SCORE",
+                        "rating_group": "LOVED",
+                        "percentage": 88,
+                        "user_count": 176,
+                        "month_count": 6
+                    },
+                    {
+                        "badge_type": "AMOUNT_RATING_SCORE",
+                        "rating_group": "LIKED",
+                        "percentage": 91,
+                        "user_count": 33,
+                        "month_count": 6
+                    },
+                    {
+                        "badge_type": "QUALITY_RATING_SCORE",
+                        "rating_group": "LIKED",
+                        "percentage": 97,
+                        "user_count": 33,
+                        "month_count": 6
+                    }
+                ],
+                "buffet": false
+            },
+            "store": {
+                "store_id": "34748s",
+                "store_name": "Sushi Shop - Rennes Mairie",
+                "branch": "",
+                "description": "",
+                "tax_identifier": "FR84504726332",
+                "website": "www.sushishop.fr",
+                "store_location": {
+                    "address": {
+                        "country": {
+                            "iso_code": "FR",
+                            "name": "France"
+                        },
+                        "address_line": "4 Rue de Coetquen, 35000 Rennes, France",
+                        "city": "",
+                        "postal_code": ""
+                    },
+                    "location": {
+                        "longitude": -1.678837,
+                        "latitude": 48.1108869
+                    }
+                },
+                "logo_picture": {
+                    "picture_id": "61271",
+                    "current_url": "https://s3-eu-west-1.amazonaws.com/tgtg1uploads/store/1548931413_uSIb4C0uBSDHhisDcdP81UdCj7NU2DK7.jpg"
+                },
+                "store_time_zone": "Europe/Paris",
+                "hidden": false,
+                "favorite_count": 0,
+                "we_care": false
+            },
+            "display_name": "Sushi Shop - Rennes Mairie (Soir)",
+            "pickup_interval": {
+                "start": "2020-07-05T20:15:00Z",
+                "end": "2020-07-05T20:30:00Z"
+            },
+            "pickup_location": {
+                "address": {
+                    "country": {
+                        "iso_code": "FR",
+                        "name": "France"
+                    },
+                    "address_line": "4 Rue de Coetquen, 35000 Rennes, France",
+                    "city": "",
+                    "postal_code": ""
+                },
+                "location": {
+                    "longitude": -1.678837,
+                    "latitude": 48.1108869
+                }
+            },
+            "purchase_end": "2020-07-05T20:30:00Z",
+            "items_available": 0,
+            "sold_out_at": "2020-07-04T23:04:48Z",
+            "distance": 1173.8070266318769,
+            "favorite": true,
+            "in_sales_window": true,
+            "new_item": false
+        },
+        {
+            "item": {
+                "item_id": "28494i2471992",
+                "price": {
+                    "code": "EUR",
+                    "minor_units": 400,
+                    "decimals": 2
+                },
+                "value": {
+                    "code": "EUR",
+                    "minor_units": 1200,
+                    "decimals": 2
+                },
+                "cover_picture": {
+                    "picture_id": "52767",
+                    "current_url": "https://images.tgtg.ninja/store/1512728125_yRRfLFYR9h1XHMfdJVlQz1WXhJ2yK3sS_scale.jpg"
+                },
+                "logo_picture": {
+                    "picture_id": "130411",
+                    "current_url": "https://images.tgtg.ninja/store/dd327eeb-43fa-4eeb-9e98-55615bd19709.png"
+                },
+                "name": "",
+                "description": "\ud83c\udf63 Envie d'Asie ? Venez r\u00e9cup\u00e9rer vos barquettes de sushis (saumon, california, maki, chirashi) pour un bon repas copieux qui vous fera voyager !  \n\n\ud83d\udd14Pensez bien \u00e0 prendre votre propre sac afin d'emporter votre repas !  \n\n\ud83d\udce3Ne cherchez pas un restaurant, l'h\u00f4tel Ibis Rennes Centre Gare Sud s'engage contre le gaspillage avec Too Good To Go et devient un point de collecte ! \n",
+                "can_user_supply_packaging": false,
+                "packaging_option": "BAG_ALLOWED",
+                "collection_info": "",
+                "favorite_count": 3012,
+                "diet_categories": [],
+                "item_category": "MEAL",
+                "badges": [
+                    {
+                        "badge_type": "AMOUNT_RATING_SCORE",
+                        "rating_group": "LOVED",
+                        "percentage": 94,
+                        "user_count": 137,
+                        "month_count": 6
+                    },
+                    {
+                        "badge_type": "OVERALL_RATING_TRUST_SCORE",
+                        "rating_group": "LOVED",
+                        "percentage": 91,
+                        "user_count": 163,
+                        "month_count": 6
+                    },
+                    {
+                        "badge_type": "QUALITY_RATING_SCORE",
+                        "rating_group": "LOVED",
+                        "percentage": 88,
+                        "user_count": 137,
+                        "month_count": 6
+                    },
+                    {
+                        "badge_type": "SERVICE_RATING_SCORE",
+                        "rating_group": "LOVED",
+                        "percentage": 97,
+                        "user_count": 163,
+                        "month_count": 6
+                    }
+                ],
+                "buffet": false
+            },
+            "store": {
+                "store_id": "28331s",
+                "store_name": "Sushi - Ibis Rennes Centre Gare Sud",
+                "branch": "",
+                "description": "",
+                "tax_identifier": "FR83534455118",
+                "website": "",
+                "store_location": {
+                    "address": {
+                        "country": {
+                            "iso_code": "FR",
+                            "name": "France"
+                        },
+                        "address_line": "15 Rue de Ch\u00e2tillon, 35000 Rennes, France",
+                        "city": "",
+                        "postal_code": ""
+                    },
+                    "location": {
+                        "longitude": -1.6731746,
+                        "latitude": 48.1024894
+                    }
+                },
+                "logo_picture": {
+                    "picture_id": "130411",
+                    "current_url": "https://images.tgtg.ninja/store/dd327eeb-43fa-4eeb-9e98-55615bd19709.png"
+                },
+                "store_time_zone": "Europe/Paris",
+                "hidden": false,
+                "favorite_count": 0,
+                "we_care": false
+            },
+            "display_name": "Sushi - Ibis Rennes Centre Gare Sud",
+            "pickup_location": {
+                "address": {
+                    "country": {
+                        "iso_code": "FR",
+                        "name": "France"
+                    },
+                    "address_line": "15 Rue de Ch\u00e2tillon, 35000 Rennes, France",
+                    "city": "",
+                    "postal_code": ""
+                },
+                "location": {
+                    "longitude": -1.6731746,
+                    "latitude": 48.1024894
+                }
+            },
+            "items_available": 0,
+            "distance": 1173.9153447734323,
+            "favorite": true,
+            "in_sales_window": false,
+            "new_item": false
+        },
+        {
+            "item": {
+                "item_id": "34472i2614935",
+                "price": {
+                    "code": "EUR",
+                    "minor_units": 700,
+                    "decimals": 2
+                },
+                "value": {
+                    "code": "EUR",
+                    "minor_units": 0,
+                    "decimals": 2
+                },
+                "cover_picture": {
+                    "picture_id": "5900",
+                    "current_url": "https://s3-eu-west-1.amazonaws.com/tgtg1uploads/store/1548931416_uaR5cgBeVfW0hHXNeebdqjJYVmvGXkL4.jpg"
+                },
+                "logo_picture": {
+                    "picture_id": "61271",
+                    "current_url": "https://s3-eu-west-1.amazonaws.com/tgtg1uploads/store/1548931413_uSIb4C0uBSDHhisDcdP81UdCj7NU2DK7.jpg"
+                },
+                "name": "Soir",
+                "description": "\ud83c\udf72 Dans ton panier surprise, tu pourras trouver des sushis, makis, californias, spring rolls...  entre autres !\n\n\ud83c\udf31 N\u2019oublie pas d\u2019apporter ton sac ET ton emballage.\n\n\ud83d\udc49 Psst, le volume d'invendus varie selon les jours. Quelque chose que tu ne manges pas ? Partage-le ! \n\n\ud83d\udca1 Sauver un steak \u00e9quivaut \u00e0 \u00e9conomiser 15 km en voiture !\n",
+                "can_user_supply_packaging": false,
+                "packaging_option": "MUST_BRING_PACKAGING",
+                "favorite_count": 3168,
+                "diet_categories": [],
+                "item_category": "MEAL",
+                "badges": [
+                    {
+                        "badge_type": "AMOUNT_RATING_SCORE",
+                        "rating_group": "LOVED",
+                        "percentage": 87,
+                        "user_count": 83,
+                        "month_count": 6
+                    },
+                    {
+                        "badge_type": "SERVICE_RATING_SCORE",
+                        "rating_group": "LOVED",
+                        "percentage": 92,
+                        "user_count": 205,
+                        "month_count": 6
+                    },
+                    {
+                        "badge_type": "QUALITY_RATING_SCORE",
+                        "rating_group": "LOVED",
+                        "percentage": 90,
+                        "user_count": 83,
+                        "month_count": 6
+                    },
+                    {
+                        "badge_type": "OVERALL_RATING_TRUST_SCORE",
+                        "rating_group": "LOVED",
+                        "percentage": 87,
+                        "user_count": 205,
+                        "month_count": 6
+                    }
+                ],
+                "buffet": false
+            },
+            "store": {
+                "store_id": "34308s",
+                "store_name": "Sushi Shop - Rennes Nemours",
+                "branch": "",
+                "description": "",
+                "tax_identifier": "FR44790095210",
+                "website": "www.sushishop.fr",
+                "store_location": {
+                    "address": {
+                        "country": {
+                            "iso_code": "FR",
+                            "name": "France"
+                        },
+                        "address_line": "8 Rue de Nemours, 35000 Rennes, France",
+                        "city": "",
+                        "postal_code": ""
+                    },
+                    "location": {
+                        "longitude": -1.6803258,
+                        "latitude": 48.1092159
+                    }
+                },
+                "logo_picture": {
+                    "picture_id": "61271",
+                    "current_url": "https://s3-eu-west-1.amazonaws.com/tgtg1uploads/store/1548931413_uSIb4C0uBSDHhisDcdP81UdCj7NU2DK7.jpg"
+                },
+                "store_time_zone": "Europe/Paris",
+                "hidden": false,
+                "favorite_count": 0,
+                "we_care": false
+            },
+            "display_name": "Sushi Shop - Rennes Nemours (Soir)",
+            "pickup_interval": {
+                "start": "2020-07-05T20:00:00Z",
+                "end": "2020-07-05T20:15:00Z"
+            },
+            "pickup_location": {
+                "address": {
+                    "country": {
+                        "iso_code": "FR",
+                        "name": "France"
+                    },
+                    "address_line": "8 Rue de Nemours, 35000 Rennes, France",
+                    "city": "",
+                    "postal_code": ""
+                },
+                "location": {
+                    "longitude": -1.6803258,
+                    "latitude": 48.1092159
+                }
+            },
+            "purchase_end": "2020-07-05T20:15:00Z",
+            "items_available": 0,
+            "sold_out_at": "2020-07-05T07:44:18Z",
+            "distance": 1173.9961940784713,
+            "favorite": true,
+            "in_sales_window": true,
+            "new_item": false
+        },
+        {
+            "item": {
+                "item_id": "34471i2614934",
+                "price": {
+                    "code": "EUR",
+                    "minor_units": 600,
+                    "decimals": 2
+                },
+                "value": {
+                    "code": "EUR",
+                    "minor_units": 0,
+                    "decimals": 2
+                },
+                "cover_picture": {
+                    "picture_id": "5900",
+                    "current_url": "https://s3-eu-west-1.amazonaws.com/tgtg1uploads/store/1548931416_uaR5cgBeVfW0hHXNeebdqjJYVmvGXkL4.jpg"
+                },
+                "logo_picture": {
+                    "picture_id": "61271",
+                    "current_url": "https://s3-eu-west-1.amazonaws.com/tgtg1uploads/store/1548931413_uSIb4C0uBSDHhisDcdP81UdCj7NU2DK7.jpg"
+                },
+                "name": "Midi",
+                "description": "\ud83c\udf72 Dans ton panier surprise, tu pourras trouver des sushis, makis, californias, spring rolls ...  entre autres !\n\n\ud83c\udf31 N\u2019oublie pas d\u2019apporter ton sac ET ton emballage.\n\n\ud83d\udc49 Psst, le volume d'invendus varie selon les jours. Quelque chose que tu ne manges pas ? Partage-le ! \n\n\ud83d\udca1 Sauver un steak \u00e9quivaut \u00e0 \u00e9conomiser 15 km en voiture !\n",
+                "can_user_supply_packaging": false,
+                "packaging_option": "MUST_BRING_PACKAGING",
+                "favorite_count": 3139,
+                "diet_categories": [],
+                "item_category": "MEAL",
+                "badges": [
+                    {
+                        "badge_type": "AMOUNT_RATING_SCORE",
+                        "rating_group": "LIKED",
+                        "percentage": 100,
+                        "user_count": 30,
+                        "month_count": 6
+                    },
+                    {
+                        "badge_type": "SERVICE_RATING_SCORE",
+                        "rating_group": "LIKED",
+                        "percentage": 95,
+                        "user_count": 59,
+                        "month_count": 6
+                    },
+                    {
+                        "badge_type": "QUALITY_RATING_SCORE",
+                        "rating_group": "LOVED",
+                        "percentage": 87,
+                        "user_count": 30,
+                        "month_count": 6
+                    },
+                    {
+                        "badge_type": "OVERALL_RATING_TRUST_SCORE",
+                        "rating_group": "LIKED",
+                        "percentage": 95,
+                        "user_count": 59,
+                        "month_count": 6
+                    }
+                ],
+                "buffet": false
+            },
+            "store": {
+                "store_id": "34308s",
+                "store_name": "Sushi Shop - Rennes Nemours",
+                "branch": "",
+                "description": "",
+                "tax_identifier": "FR44790095210",
+                "website": "www.sushishop.fr",
+                "store_location": {
+                    "address": {
+                        "country": {
+                            "iso_code": "FR",
+                            "name": "France"
+                        },
+                        "address_line": "8 Rue de Nemours, 35000 Rennes, France",
+                        "city": "",
+                        "postal_code": ""
+                    },
+                    "location": {
+                        "longitude": -1.6803258,
+                        "latitude": 48.1092159
+                    }
+                },
+                "logo_picture": {
+                    "picture_id": "61271",
+                    "current_url": "https://s3-eu-west-1.amazonaws.com/tgtg1uploads/store/1548931413_uSIb4C0uBSDHhisDcdP81UdCj7NU2DK7.jpg"
+                },
+                "store_time_zone": "Europe/Paris",
+                "hidden": false,
+                "favorite_count": 0,
+                "we_care": false
+            },
+            "display_name": "Sushi Shop - Rennes Nemours (Midi)",
+            "pickup_location": {
+                "address": {
+                    "country": {
+                        "iso_code": "FR",
+                        "name": "France"
+                    },
+                    "address_line": "8 Rue de Nemours, 35000 Rennes, France",
+                    "city": "",
+                    "postal_code": ""
+                },
+                "location": {
+                    "longitude": -1.6803258,
+                    "latitude": 48.1092159
+                }
+            },
+            "items_available": 0,
+            "distance": 1173.9961940784713,
+            "favorite": true,
+            "in_sales_window": false,
+            "new_item": false
+        }
+    ]
+}

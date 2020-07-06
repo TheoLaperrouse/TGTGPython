@@ -15,28 +15,26 @@ headers = {
     "Accept-Language": "en-US",
     "Accept-Charset": "utf-8"
 }
+with open('config.json') as logs:
+    config = json.load(logs)
 
 
 def recupTokens():
-    with open('config.json') as logs:
-        config = json.load(logs)
-        email = config['email']
-        password = config['password']
+    email = config['email']
+    password = config['password']
     authURL = "https://apptoogoodtogo.com/api/auth/v1/loginByEmail"
     jsonToPost = {
         'device_type': 'UNKNOWN',
         'email': email,
         'password': password
     }
-
     response = requests.post(authURL, json=jsonToPost, headers=headers)
     data = json.loads(response.text)
+    config['access_token'] = data['access_token']
+    config['refresh_token'] = data['refresh_token']
+    config['user_id'] = data['startup_data']['user']['user_id']
     with open('config.json', 'w') as config_json:
-        config['access_token'] = data['access_token']
-        config['refresh_token'] = data['refresh_token']
-        config['user_id'] = data['startup_data']['user']['user_id']
         json.dump(config, config_json, indent=4)
-
     listFav(config['user_id'], config['access_token'])
 
 
@@ -67,7 +65,6 @@ def listFav(user_id, access_token):
         if(nbrePanier > 0):
             paniersText.append(
                 f'Il y a {nbrePanier} panier disponible à {nameRestaurant}')
-
     if len(paniersText) > 0:
         sendMail(paniersText)
     time.sleep(600)
@@ -75,17 +72,15 @@ def listFav(user_id, access_token):
 
 
 def sendMail(paniersText):
-    with open('config.json', 'w') as config_json:
-        gmail_user = config_json['mail']['gmail_user']
-        gmail_password = config_json['mail']['gmail_password']
-        receveir = config_json['mail']['mailReceiver']
+    gmail_user = config['mail']['gmail_user']
+    gmail_password = config['mail']['gmail_password']
+    receveir = config['mail']['mailReceiver']
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-
     msg = MIMEMultipart()
-    msg['From'], msg['To'], msg['Subject'] = {
-        'From': gmail_user, 'To': receveir, 'Subject': 'Paniers Disponibles!'}
-
+    msg['From'] = gmail_user
+    msg['To'] = receveir
+    msg['Subject'] = 'Paniers Disponibles!'
     body = '\n'.join(paniersText)
     body = MIMEText(body)
     msg.attach(body)

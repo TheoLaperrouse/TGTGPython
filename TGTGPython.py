@@ -7,22 +7,18 @@ from email.mime.text import MIMEText
 import smtplib
 import time
 
-
-baseUrl = ""
+baseUrl = "https://apptoogoodtogo.com/api"
 headers = {
     "Content-Type": "application/json",
     "Accept": "application/json",
-    "Accept-Language": "en-US",
-    "Accept-Charset": "utf-8"
+    "Accept-Language": "en-US"
 }
-with open('config.json') as logs:
-    config = json.load(logs)
 
 
 def recupTokens():
     email = config['email']
     password = config['password']
-    authURL = "https://apptoogoodtogo.com/api/auth/v1/loginByEmail"
+    authURL = baseUrl + "/auth/v1/loginByEmail"
     jsonToPost = {
         'device_type': 'UNKNOWN',
         'email': email,
@@ -35,12 +31,12 @@ def recupTokens():
     config['user_id'] = data['startup_data']['user']['user_id']
     with open('config.json', 'w') as config_json:
         json.dump(config, config_json, indent=4)
-    listFav(config['user_id'], config['access_token'])
+    return [config['access_token'], config['user_id']]
 
 
-def listFav(user_id, access_token):
-    favURL = "https://apptoogoodtogo.com/api/item/v4/"
-    bearerToken = f'Bearer {access_token}'
+def listFav(tokens):
+    favURL = baseUrl + "/item/v4/"
+    bearerToken = f'Bearer {tokens[0]}'
     headersUser = {
         "User-Agent": "TGTG/19.12.0 (724) (Android/Unknown; Scale/3.00)",
         "Authorization": bearerToken
@@ -52,23 +48,29 @@ def listFav(user_id, access_token):
             "longitude": 13.3888599
         },
         "radius": 200,
-        "user_id": user_id
+        "user_id": tokens[1]
     }
     response = requests.post(favURL, json=jsonToPost,
                              headers=headersUser)
     data = json.loads(response.text)
     paniersText = []
+    boolSend = False
     for item in data['items']:
         nameRestaurant = item['display_name']
         nbrePanier = item['items_available']
-        print(f'{nameRestaurant} : {nbrePanier} panier(s) disponible(s)')
-        if(nbrePanier > 0):
+        idItem = item['item']['item_id']
+        # S'il y a un changement, on envoie un mail
+        if (idItem in items and items[idItem] != nbrePanier) or (idItem not in items and nbrePanier != 0):
             paniersText.append(
-                f'Il y a {nbrePanier} panier disponible à {nameRestaurant}')
-    if len(paniersText) > 0:
+                f'Il y a {nbrePanier} panier(s) disponible(s) à {nameRestaurant}')
+            boolSend = True
+        items[idItem] = nbrePanier
+        print(f'{nameRestaurant} : {nbrePanier} panier(s) disponible(s)')
+
+    if boolSend and config['mail']['gmail_user'] != "":
         sendMail(paniersText)
     time.sleep(600)
-    listFav(user_id, access_token)
+    listFav(tokens)
 
 
 def sendMail(paniersText):
@@ -90,4 +92,8 @@ def sendMail(paniersText):
 
 
 if __name__ == '__main__':
-    recupTokens()
+    items = {}
+    with open('config.json') as logs:
+        config = json.load(logs)
+    tokens = recupTokens()
+    listFav(tokens)

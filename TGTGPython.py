@@ -55,12 +55,15 @@ def listFav(tokens):
     data = json.loads(response.text)
     paniersText = []
     boolSend = False
+    t = time.localtime()
+    current_time = time.strftime("\nRapport à %H:%M:%S ", t)
+    print(current_time)
     for item in data['items']:
         nameRestaurant = item['display_name']
         nbrePanier = item['items_available']
         idItem = item['item']['item_id']
         # S'il y a un changement, on envoie un mail
-        if (idItem in items and items[idItem] != nbrePanier) or (idItem not in items and nbrePanier != 0):
+        if (idItem in items and items[idItem] != nbrePanier and nbrePanier != 0) or (idItem not in items and nbrePanier != 0):
             paniersText.append(
                 f'Il y a {nbrePanier} panier(s) disponible(s) à {nameRestaurant}')
             boolSend = True
